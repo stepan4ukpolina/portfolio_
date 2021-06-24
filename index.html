@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,300i,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+
+
+<!-- Header -->
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+
+            <div class="user">
+                <div class="user__avatar">
+                    <img src="https://r1.nubex.ru/s12842-986/f3052_d6/mobile_logo_d47ba1727c3877e3feae7efc86bf0ab1.jpg" width="57" height="57" alt="">
+                </div>
+                <div class="user__content">
+                    <div class="user__name">
+                        Степанчук<br>Полина
+                    </div>
+                    <div class="user__prof">Студентка ГБОУПО "СТЭТ"</div>
+                </div>
+            </div>
+
+            <nav class="nav" id="nav">
+                <a class="nav__link" href="#">Достижения</a>
+                <a class="nav__link" href="#">Обо мне</a>
+                <a class="nav__link" href="#">Блог</a>
+                <a class="nav__link" href="#">Контакты</a>
+                <a class="nav__link  nav__link--btn" data-modal="#modal_resume" href="#">Связаться со мной</a>
+            </nav>
+
+            <button class="burger" type="button" id="navToggle">
+                <img class="burger__icon" src="images/burger.svg" alt="">
+            </button>
+        </div>
+    </div>
+</header>
+
+
+
+<!-- Intro -->
+<section class="intro">
+    <div class="container">
+
+        <div class="intro__inner">
+            <div class="intro__content">
+                <h2 class="intro__subtitle">Привет я</h2>
+                <h1 class="intro__title">Степанчук Полина</h1>
+                <div class="intro__text">студентка ГБОУПО "СТЭТ"</div>
+
+                <div class="social">
+                    <a class="social__link" href="https://github.com/stepan4ukpolina">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/1200px-Octicons-mark-github.svg.png" width="30" height="30" alt="">
+                    </a>
+                    <a class="social__link" href="#">
+                        <img src="https://seeklogo.com/images/D/discord-logo-134E148657-seeklogo.com.png" width="30" height="35" alt="">
+                    </a>
+                    <a class="social__link" href="#">
+                        <img src="https://cdn.worldvectorlogo.com/logos/instagram-2016-5.svg" width="30" height="30" alt="">
+                    </a>
+                    <a class="social__link" href="https://vk.com/id281513282">
+                        <img src="https://cdn.worldvectorlogo.com/logos/vk-com-logo.svg"  width="30" height="30" alt="">
+                    </a>
+                    <a class="social__link" href="#">
+                        <img src="https://www.logo.wine/a/logo/Telegram_(software)/Telegram_(software)-Logo.wine.svg" width="30" height="30"  alt="">
+                    </a>
+                </div>
+
+                <a class="btn" href="#" data-modal="#modal_hire_me">Связаться со мной</a>
+                <button class="btn" type="button" data-modal="#modal_resume">Посмотреть резюме</button>
+            </div>
+
+            <img class="intro__photo" src="images/photo.png" alt="">
+        </div><!-- /.intro__inner -->
+
+    </div><!-- /.container -->
+</section>
+
+
+
+<!-- Works -->
+<div class="works">
+    <div class="container">
+
+        <div class="works__nav">
+            <a class="works__nav-link" href="#" data-filter="all">Все</a>
+            <a class="works__nav-link" href="#" data-filter="app">Профессиональный опыт</a>
+            <a class="works__nav-link" href="#" data-filter="website">Научно-исследовательские работы</a>
+            <a class="works__nav-link" href="#" data-filter="interaction">Внеурочная деятельность</a>
+        </div>
+
+
+        <div class="portfolio" id="portfolio">
+            <div class="portfolio__col" data-cat="app">
+                <div class="work" data-modal="#modal_project_1">
+                    <img class="work__image" src="https://sun9-21.userapi.com/impg/ZdzHOZoYMPe8BLJMWZES20LJ2Xlh9GzJIBakGQ/A6CYTKKkPCA.jpg?size=600x800&quality=96&sign=13899a54779ce26cfb298707cbe0b938&type=album"  alt="">
+                    <div class="work__content">
+                        <div class="work__cat">Профессиональный опыт</div>
+                        <div class="work__title">
+                            Сертификат
+                            <time class="work__date" datetime="2019-11-22 19:00">2020</time>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio__col" data-cat="website">
+                <div class="work" data-modal="#modal_project_2">
+                    <img class="work__image" src="https://sun9-36.userapi.com/impg/TzdIpAQJPdNR1Qqfp_xOuDsAW0gh2fBCv0C-0w/eX5cVjwiIkU.jpg?size=550x739&quality=96&sign=ee8fe9f6ce4dfa577bca0a4df201c0cb&type=album" alt="">
+                    <div class="work__content">
+                        <div class="work__cat">Научно-исследовательские работы</div>
+                        <div class="work__title">
+                            Курсовая работа
+                            <time class="work__date" datetime="2019-11-22 19:00">2021</time>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio__col" data-cat="interaction">
+                <div class="work">
+                    <img class="work__image" src="https://sun9-15.userapi.com/impg/nvOlf6fxiE9LvWJEWx0KDmh45RArWDLh1WOZCg/Y_JaBtVwb94.jpg?size=786x1058&quality=96&sign=827a284dc2a9c78e23f400678ab8c52f&type=album" alt="">
+                    <div class="work__content">
+                        <div class="work__cat">Внеурочная деятельность</div>
+                        <div class="work__title">
+                            Благодарность
+                            <time class="work__date" datetime="2019-11-22 19:00">2020</time>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="portfolio__col" data-cat="interaction">
+                <div class="work">
+                    <img class="work__image" src="https://sun9-6.userapi.com/impg/gAcLC2_bH0OF9wUt4mC5NGwTxja9gKVsocnp4Q/dVNX9LPOCuI.jpg?size=789x1058&quality=96&sign=2c42a89d6db5ebb4d963527c27fe7ab3&type=album"  alt="">
+                    <div class="work__content">
+                        <div class="work__cat">Внеурочная деятельность</div>
+                        <div class="work__title">
+                            Благодарность
+                            <time class="work__date" datetime="2019-11-22 19:00">2020</time>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio__col" data-cat="interaction">
+                <div class="work">
+                    <img class="work__image" src="https://sun9-3.userapi.com/impg/yKIVwmNBeN0L_xzq_t1nvTBxhw2kATM9p-ajYw/a4Krna7E7Vo.jpg?size=781x1058&quality=96&sign=3dc48e0c981e91d98b53546f6dde902f&type=album"  alt="">
+                    <div class="work__content">
+                        <div class="work__cat">Внеурочная деятельность</div>
+                        <div class="work__title">
+                            Благодарность
+                            <time class="work__date" datetime="2019-11-22 19:00">2021</time>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.portfolio -->
+
+        <div class="text-center">
+            <a class="btn  btn--sm" href="#">Загрузить больше достижений</a>
+        </div>
+
+    </div><!-- /.container -->
+</div><!-- /.works -->
+
+
+
+<!-- About -->
+<section class="about">
+    <div class="container">
+
+        <div class="about__inner">
+            <div class="about__photo">
+                <img class="img" src="images/designer_photo.png" alt="">
+            </div>
+
+            <div class="about__content">
+                <h3 class="about__title">Обо мне</h3>
+                <h2 class="about__bigtitle">Кто я?</h2>
+                <div class="about__text">
+                    <p>Я, Степанчук Полина, 2002 г.р., обучаюсь в ГБОУПО «СТЭТ» с 2018 года по специальности 09.02.04 "Информационные системы (по отраслям).</p>
+                    <p>Выбор профессии был не случаен – с детства меня привлекали компьютеры и их составляющие. Мне всегда хотелось окунуться глубже в строение такой сложной машины, изучить её вдоль и поперёк, узнать, как же она работает.</p>
+                    <p>Сегодня я студентка 3-го курса, а значит через год предстоит сдать государственную итоговую аттестацию и получить диплом, чтобы полностью окунуться в свою профессию. С нетерпением ожидаю это волнительного события, а пока вы можете ознакомиться с моими достижениями на данном сайте.</p>
+                </div>
+                <a class="btn" href="#" data-modal="#modal_hire_me">Связаться со мной</a>
+                <button class="btn" type="button" data-modal="#modal_resume">Резюме</button>
+            </div><!-- /.about__content -->
+        </div><!-- /.about__inner -->
+
+    </div><!-- /.container -->
+</section>
+
+
+
+<!-- Reviews -->
+<div class="reviews">
+    <div class="container">
+
+        <div class="reviews__item">
+            <div class="reviews__text">
+                <p>Я слишком сумасшедший, чтобы не быть гением.</p>
+            </div>
+
+            <div class="reviews__author">
+                <img class="reviews__photo" src="https://newstyle-mag.com/wp-content/uploads/2017/02/232.jpg" alt="">
+                <div class="reviews__name">Альберт Эйнштейн</div>
+                <div class="reviews__company">ООО "Пурпурная заря"</div>
+                <div class="reviews__rating">
+                    <img class="reviews__star" src="images/star.svg" width="13" height="13" alt="">
+                    <img class="reviews__star" src="images/star.svg" width="13" height="13" alt="">
+                    <img class="reviews__star" src="images/star.svg" width="13" height="13" alt="">
+                    <img class="reviews__star" src="images/star.svg" width="13" height="13" alt="">
+                    <img class="reviews__star  reviews__star--unactive" src="images/star.svg" width="13" height="13" alt="">
+                </div>
+            </div>
+        </div><!-- /.reviews__item -->
+
+    </div><!-- /.container -->
+</div><!-- /.reviews -->
+
+
+
+<!-- News -->
+<section class="news">
+    <div class="container">
+
+        <div class="news__header">
+            <h3 class="news__title">Разное</h3>
+            <div class="news__text">Вам может быть интересно</div>
+        </div>
+
+
+        <div class="articles">
+            <div class="articles__col">
+                <div class="articles__item">
+                    <div class="articles__header">
+                        <time class="articles__date">
+                            10<br> Июня
+                        </time>
+                        <a href="#">
+                            <img class="articles__photo" src="https://educon.by/images/article/007.jpg" width="370" height="257"alt="">
+                        </a>
+                    </div>
+                    <div class="articles__content">
+                        <h4 class="articles__title">
+                            <a href="https://educon.by/index.php/pozn/fizika/96-kak-uvidet-svoj-zatylok-s-pomoshchyu-chernoj-dyry">Как увидеть свой затылок с помощью черной дыры?</a>
+                        </h4>
+                        <div class="articles__cat">Интересные факты</div>
+                        <div class="articles__text">
+                            <p>В этой статье кратко рассмотрим свойства черных дыр, возникающие вследствие их колоссального гравитационного притяжения, и то как интересно эти свойства «можно» было бы использовать при решении некоторых бытовых вопросов.</p>
+                        </div>
+                    </div>
+                    <a class="btn  btn--sm" href="https://educon.by/index.php/pozn/fizika/96-kak-uvidet-svoj-zatylok-s-pomoshchyu-chernoj-dyry">Читать далее</a>
+                </div>
+            </div>
+
+            <div class="articles__col">
+                <div class="articles__item">
+                    <div class="articles__header">
+                        <time class="articles__date">
+                            10<br> Июня
+                        </time>
+                        <a href="#">
+                            <img class="articles__photo" src="https://educon.by/images/article/044.jpg"  width="370" height="257" alt="">
+                        </a>
+                    </div>
+                    <div class="articles__content">
+                        <h4 class="articles__title">
+                            <a href="https://educon.by/index.php/pozn/filosofia/135-sootnoshenie-religii-i-nauki">Соотношение религии и науки</a>
+                        </h4>
+                        <div class="articles__cat">Мифы и реальность</div>
+                        <div class="articles__text">
+                            <p>В этой насыщенной статье описываются все аспекты взаимоотношений между религией (на примере Христианства) и наукой, история их сосуществования, их сходства и различия. Статья наглядно, аргументированно, и на большом количестве примеров демонстрирует, что между религией и наукой нет противоречий.</p>
+                        </div>
+                    </div>
+                    <a class="btn  btn--sm" href="https://educon.by/index.php/pozn/filosofia/135-sootnoshenie-religii-i-nauki">Читать далее</a>
+                </div>
+            </div>
+
+            <div class="articles__col">
+                <div class="articles__item">
+                    <div class="articles__header">
+                        <time class="articles__date">
+                            10<br> Июня
+                        </time>
+                        <a href="#">
+                            <img class="articles__photo" src="https://educon.by/images/article/003.jpg" width="370" height="257" alt="">
+                        </a>
+                    </div>
+                    <div class="articles__content">
+                        <h4 class="articles__title">
+                            <a href="https://educon.by/index.php/pozn/filosofia/94-kak-dokazat-chto-my-zhivem-ne-v-matritse">Как доказать, что мы живем не в матрице?</a>
+                        </h4>
+                        <div class="articles__cat">Мифы и реальность</div>
+                        <div class="articles__text">
+                            <p>После выхода на широкий экран фильма «Матрица» и его продолжений, многие люди задумались: а действительно, не живем ли мы все в матрице? Как же доказать, что это действительно не так?</p>
+                        </div>
+                    </div>
+                    <a class="btn  btn--sm" href="https://educon.by/index.php/pozn/filosofia/94-kak-dokazat-chto-my-zhivem-ne-v-matritse">Читать далее</a>
+                </div>
+            </div>
+
+        </div><!-- /.articles -->
+
+        <div class="news__footer">
+            <a class="news__link" href="https://educon.by/index.php/pozn">Посмотреть больше постов</a>
+        </div>
+
+    </div><!-- /.container -->
+</section>
+
+
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+
+        <div class="footer__inner">
+            <div class="footer__credits">
+                <div class="footer__copyright">
+                    &copy; 2018 UI43 - Free Templates
+                </div>
+
+                <div class="footer__social">
+                    <a class="social__link" href="https://github.com/stepan4ukpolina">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/1200px-Octicons-mark-github.svg.png" width="15" height="15" alt="">
+                    </a>
+                    <a class="social__link" href="#">
+                        <img src="https://seeklogo.com/images/D/discord-logo-134E148657-seeklogo.com.png" width="15" height="15" alt="">
+                    </a>
+                    <a class="social__link" href="#">
+                        <img src="https://cdn.worldvectorlogo.com/logos/instagram-2016-5.svg" width="15" height="15" alt="">
+                    </a>
+                    <a class="social__link" href="https://vk.com/id281513282">
+                        <img src="https://cdn.worldvectorlogo.com/logos/vk-com-logo.svg"  width="15" height="15" alt="">
+                    </a>
+                    <a class="social__link" href="#">
+                        <img src="https://www.logo.wine/a/logo/Telegram_(software)/Telegram_(software)-Logo.wine.svg" width="25" height="25"  alt="">
+                    </a>
+                </div>
+            </div><!-- /.footer__credits -->
+
+            <nav class="footer__nav">
+                <a class="footer__nav-link" href="#">Достижения</a>
+                <a class="footer__nav-link" href="#">Обо мне</a>
+                <a class="footer__nav-link" href="#">Блог</a>
+                <a class="footer__nav-link" href="#">Контакты</a>
+                <a class="footer__nav-link  footer__nav-link--btn" data-modal="#modal_resume" href="#">Связаться со мной</a>
+            </nav>
+        </div><!-- /.footer__inner -->
+
+    </div><!-- /.container -->
+</footer>
+
+
+
+
+
+<!-- Modals -->
+<div class="modal" id="modal_project_1">
+    <div class="modal__dialog">
+
+        <button class="modal__close" type="button" data-close>
+            <img src="https://icons8.com/iconizer/files/Web_Design_Creatives/orig/Cross-lines.png" width="15" height="15" alt="Close">
+        </button>
+
+        <div class="modal-work">
+            <div class="modal-work__preview">
+                <div data-slider="slick">
+                    <div>
+                        <img class="modal-work__photo" src="https://sun9-23.userapi.com/impg/h5MWYT4Abf2_eGc0ZaFh8RS7d_qlhXKAbZHzBQ/HSiX9j06rqA.jpg?size=826x1106&quality=96&sign=d3d3402ec6494a35b584479bf55f2fb4&type=album" alt="">
+                    </div>
+                    <div>
+                        <img class="modal-work__photo" src="https://placehold.it/790x780/333" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-work__content">
+
+                <div class="modal-work__header">
+                    <h3 class="modal-work__title">СЕРТИФИКАТ
+                    </h3>
+                    <div class="modal-work__info">
+                        ПРОФЕССИОНАЛЬНЫЙ ОПЫТ<span class="modal-work__info-divider">|</span>2020
+                    </div>
+                </div>
+
+                <div class="modal-work__client">
+                    <div class="modal-work__client-title">Место получения:</div>
+                    <div class="modal-work__client-company">Центр автоматизации Кутузов</div>
+                </div>
+
+                <div class="modal-work__text">
+                    <p>Серцифицированный курс сервис-инженера</p>
+                    
+                </div>
+
+                <div class="modal-work__footer">
+                    <button class="modal-work__btn slickPrev" type="button">
+                        <img src="images/back.svg" height="11" alt="">
+                        Предыдущее
+                    </button>
+                    <button class="modal-work__btn slickNext" type="button">
+                        Следующее 
+                        <img src="images/next.svg" height="11" alt="">
+                    </button>
+                </div>
+
+            </div><!-- /.modal-work__content -->
+        </div><!--/.modal-work -->
+
+    </div><!-- /.modal__dialog -->
+</div><!-- /.modal -->
+
+
+<div class="modal" id="modal_project_2">
+    <div class="modal__dialog">
+
+        <button class="modal__close" type="button" data-close>
+            <img src="https://icons8.com/iconizer/files/Web_Design_Creatives/orig/Cross-lines.png" width="15" height="15" alt="Close">
+        </button>
+
+        <div class="modal-work">
+            <div class="modal-work__preview">
+                <div data-slider="slick">
+                    <div>
+                        <img class="modal-work__photo" src="https://sun9-36.userapi.com/impg/TzdIpAQJPdNR1Qqfp_xOuDsAW0gh2fBCv0C-0w/eX5cVjwiIkU.jpg?size=550x739&quality=96&sign=ee8fe9f6ce4dfa577bca0a4df201c0cb&type=album" alt="">
+                    </div>
+                    <div>
+                        <img class="modal-work__photo" src="https://placehold.it/790x780/333" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-work__content">
+
+                <div class="modal-work__header">
+                    <h2class="modal-work__title"> <strong>НАУЧНО-ИССЛЕДОВАТЕЛЬСКИЕ РАБОТЫ</strong></h2>
+                    <div class="modal-work__info">
+                        Курсовая работа <span class="modal-work__info-divider">|</span> 2021
+                    </div>
+                </div>
+
+                <div class="modal-work__client">
+                    <div class="modal-work__client-title">Место защиты:</div>
+                    <div class="modal-work__client-company">ГБОУПО "СТЭТ"</div>
+                </div>
+
+                <div class="modal-work__text">
+                    <p>Курсовая работа на тему "Анализ эффективности обработки и хранения данных в реляциооных базах данный отдела кадров. Прием на работу сотрудников предприятия"</p>
+                   
+                </div>
+
+                <div class="modal-work__footer">
+                    <button class="modal-work__btn slickPrev" type="button">
+                        <img src="images/back.svg" height="11" alt="">
+                        Предыдущее
+                    </button>
+                    <button class="modal-work__btn slickNext" type="button">
+                        Следующее
+                        <img src="images/next.svg" height="11" alt="">
+                    </button>
+                </div>
+
+            </div><!-- /.modal-work__content -->
+        </div><!--/.modal-work -->
+
+    </div><!-- /.modal__dialog -->
+</div><!-- /.modal -->
+
+
+<div class="modal" id="modal_resume">
+    <div class="modal__dialog">
+
+        <button class="modal__close" type="button" data-close>
+            <img src="https://icons8.com/iconizer/files/Web_Design_Creatives/orig/Cross-lines.png" width="15" height="15" alt="Close">
+        </button>
+
+        <div class="modal__content">
+            <h3 class="modal__title  text-center">Резюме</h3>
+
+            <div class="text-center">
+                <a class="btn btn--thin" href="#">Скачать в PDF</a>
+                <a class="btn btn--thin" href="#">Распечатать</a>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline__col  timeline__col--left">
+                    <h4 class="timeline__title">Опыт</h4>
+
+                    <div class="timeline__item">
+                        <time class="timeline__date" datetime="11-21-2019">2020 </time>
+                        <h5 class="timeline__subtitle">Учебная практика</h5>
+                        <div class="timeline__position">Эксплуатация и модификация информационных систем</div>
+                        <div class="timeline__text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis debitis autem aspernatur sed iusto maiores nihil magni provident dolore, animi nemo est corporis in facilis eum quae sint aliquam, ipsam?</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline__item">
+                        <time class="timeline__date" datetime="11-21-2019">2020</b></time>
+                        <h5 class="timeline__subtitle">Производственная практика</h5>
+                        <div class="timeline__position">Эксплуатация и модификация информационных систем</div>
+                        <div class="timeline__text">
+                            <p>Прохождение практики в организации ООО "Центр автоматизации Кутузов" в размере 252 часов. Получение сертификата сервис-инженера 1С</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline__item">
+                        <time class="timeline__date" datetime="11-21-2019">2021</time>
+                        <h5 class="timeline__subtitle">Учебная практика</h5>
+                        <div class="timeline__position">Участие в разработке информационных систем</div>
+                        <div class="timeline__text">
+                            <p>Прохождение усебной практик в размере 216 часов. Создание сайта-портфолио</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline__col  timeline__col--right">
+                    <h4 class="timeline__title">Образование</h4>
+
+                    <div class="timeline__item">
+                        <time class="timeline__date" datetime="11-21-2019">2009 - 2018 </time>
+                        <h5 class="timeline__subtitle">Неполное среднее образование</h5>
+                        <div class="timeline__position">ГБОУ СОШ №9</div>
+                    </div>
+
+                    <h4 class="timeline__title">Навыки</h4>
+                    <div class="progress-bar">
+                        <div class="progress-bar__item">
+                            <div class="progress-bar__left">
+                                <div class="progress-bar__title">Пользователь ПК</div>
+                            </div>
+                            <div class="progress-bar__right">
+                                <div class="progress-bar__bar">
+                                    <div class="progress-bar__progress" style="width: 95%;"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="progress-bar__item">
+                            <div class="progress-bar__left">
+                                <div class="progress-bar__title">Программирование</div>
+                            </div>
+                            <div class="progress-bar__right">
+                                <div class="progress-bar__bar">
+                                    <div class="progress-bar__progress" style="width: 40%;"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="progress-bar__item">
+                            <div class="progress-bar__left">
+                                <div class="progress-bar__title">Офисное ПО</div>
+                            </div>
+                            <div class="progress-bar__right">
+                                <div class="progress-bar__bar">
+                                    <div class="progress-bar__progress" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- /.progress-bar -->
+
+                   
+                </div><!-- /.timeline__col -->
+
+            </div><!-- /.timeline -->
+
+            <div class="text-center">
+                <a class="btn" href="#" data-modal="#modal_hire_me">Связаться со мной</a>
+            </div>
+
+        </div><!-- /.modal__content -->
+
+    </div><!-- /.modal__dialog -->
+</div><!-- /.modal -->
+
+
+<div class="modal" id="modal_hire_me">
+    <div class="modal__dialog  modal__dialog--sm">
+
+        <button class="modal__close" type="button" data-close>
+            <img src="https://icons8.com/iconizer/files/Web_Design_Creatives/orig/Cross-lines.png" width="15" height="15" alt="Close">
+        </button>
+
+        <div class="contact">
+            <div class="contact__left">
+                <h3 class="modal__title mb-0">Давайте пообщаемся!</h3>
+                <h4 class="modal__subtitle">Позвоните или напишите мне</h4>
+
+                <ul class="contact__info">
+                    <li class="contact__info-item">
+                        <img class="contact__info-icon" alt=""><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"  width="15" height="15">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                          </svg>
+                        +7(978) 999-99-99
+                    </li>
+                    <li class="contact__info-item">
+                        <img class="contact__info-icon"  alt=""> <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="15" height="15">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                          </svg>
+                          pochta@gmail.com
+                    </li>
+                </ul>
+
+                <form class="form" action="/" method="post">
+                    <div class="form__group">
+                        <label class="form__label" for="input-email">Адрес электронной почты:</label>
+                        <input class="form__input" name="input-email" type="text" id="input-email" placeholder="Email">
+                    </div>
+
+                    <div class="form__group">
+                        <label class="form__label" for="input-text">Вопрос</label>
+                        <textarea class="form__textarea" name="input-text" id="input-text" placeholder="Задайте свой вопрос"></textarea>
+                    </div>
+
+                    <div class="text-right">
+                        <button class="btn" type="submit">Отправить</button>
+                    </div>
+                </form>
+            </div><!-- /.contact__left -->
+        </div><!-- /.contact -->
+
+    </div><!-- /.modal__dialog -->
+</div><!-- /.modal -->
+
+
+
+<!-- JS -->
+<script src="js/slick.min.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
